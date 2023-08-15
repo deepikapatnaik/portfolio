@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Deepika's Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Pachipenta Deepika</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#first1">Home</a></li>
+                    <li><a href="#second2">About</a></li>
+                    <li><a href="#third3">Skills</a></li>
+                    <li><a href="#fourth4">Projects</a></li>
+                    <li><a href="#final">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first" id="first1">
+            <div class="leftsec">
+                <img src="images/coding.jpg" alt="image">
+            </div>
+            <div class="rightsec">
+                Hello!!
+                <div>I am <span class="name">Deepika</span></div>
+                <div>and I am a</div>
+                <span id="element"></span>
+            </div>
+        </section>
+        <hr class="line" id="second2">
+        <section class="second">
+            <div class="info-about">
+                <h2 class="about">About Me</h2>
+                <p>I am an enthusiastic undergraduate student with in-depth knowledge of programming languages and coding skills.
+                    I enjoy problem solving and taking up new challenges.Seeking new opportunities to contribute to 
+                    the team along with learning from the insdustry.
+                </p>
+            </div>
+        </section>
+        <hr class="line" id="third3">
+        <section class="third">
+            <div>
+            <h2 class="skill">Skills</h2>
+            <ul>
+                <li>C and C++ Programming Languages</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Operating System, DBMS, Computer Network</li>
+                <li>Object Oriented Programming Concepts</li>
+                <li>Web Development</li>
+            </ul>
+            </div>
+        </section>
+        <hr class="line" id="fourth4">
+        <section class="fourth">
+            <div>
+            <h2 class="projects">Projects</h2>
+            <ul>
+                <li><h3 class="spot">Spotify Clone</h3>
+                    <p>Designed a website similar to spotify using HTML, CSS, Java Script</p>   
+                </li>
+                <li>
+                <h3 class="ev">Study on Electric Vehicle</h3>
+                <p>Studied about electric vehicles</p>
+                </li>
+            </ul>    
+            </div>
+        </section>
+        <hr class="line" id="final">
+        <section class="final">
+            <div>
+            <h2 class="contact">Contact Me</h2>
+            <div class="contact_form">
+                <form action="https://formsubmit.co/deepikapatnaik001@gmail.com" method="POST">
+                    <h3>Send message</h3>
+                    <div class="input_box">
+                        <input type="text" id="Full Name" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" id="Email" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="input_box">
+                        <textarea id="Message" required="required"></textarea>
+                        <span>Type message</span>
+                    </div>
+                    <div class="input_box">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Coder'],
+        typeSpeed: 50,
+      });
+    </script>  
+</body>
+</html>
